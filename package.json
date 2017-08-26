@@ -1,0 +1,25 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "A simple javascript timer with resuming, pausing, elapsed time, and delta time.",
+  "main": "timer.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronshappell/timer.js.git"
+  },
+  "author": "Aaron Shappell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronshappell/timer.js/issues"
+  },
+  "homepage": "https://github.com/aaronshappell/timer.js#readme",
+  "devDependencies": {
+    "jsdoc": "^3.5.4"
+  }
+}
