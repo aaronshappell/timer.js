@@ -76,6 +76,39 @@ Timer.prototype.pause = function(){
 }
 
 /**
+ * Toggles if the timer is running or not
+ */
+Timer.prototype.toggle = function(){
+    if(this.running){
+        this.pause();
+    } else{
+        this.resume();
+    }
+}
+
+/**
+ * Speeds up the speed of the timer
+ */
+Timer.prototype.faster = function(){
+    if(this.multiplier < 1){
+        this.multiplier *= 2;
+    } else{
+        this.multiplier += 1;
+    }
+}
+
+/**
+ * Slows down the speed of the timer
+ */
+Timer.prototype.slower = function(){
+    if(this.multiplier <= 1){
+        this.multiplier /= 2;
+    } else{
+        this.multiplier -= 1;
+    }
+}
+
+/**
  * Gets if the timer is running or not
  * @return {boolean} running state of the timer
  */
